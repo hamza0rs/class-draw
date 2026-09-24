@@ -189,10 +189,10 @@
         </div>
       </div>
       <div class="toolbar">
-        <button class="ghost-btn" id="configBtn" title="Configurer la classe">⚙ Configuration</button>
-        <button class="ghost-btn" id="modeBtn" title="Basculer en mode tableau">▣ Mode tableau</button>
-        <button class="icon-btn" id="soundBtn" title="Activer / couper le son">🔊</button>
-        <button class="icon-btn" id="fullBtn" title="Plein écran">⛶</button>
+        <button type="button" class="ghost-btn" id="configBtn" title="Configurer la classe">⚙ Configuration</button>
+        <button type="button" class="ghost-btn" id="modeBtn" title="Basculer en mode tableau">▣ Mode tableau</button>
+        <button type="button" class="icon-btn" id="soundBtn" title="Activer / couper le son">🔊</button>
+        <button type="button" class="icon-btn" id="fullBtn" title="Plein écran">⛶</button>
       </div>
     </header>
 
@@ -230,10 +230,10 @@
 
         <div class="footer">
           <div class="actions">
-            <button class="draw-btn" id="drawBtn">🎲 Tirer au sort</button>
+            <button type="button" class="draw-btn" id="drawBtn">🎲 Tirer au sort</button>
             <div class="secondary">
-              <button id="undoBtn" title="Annuler le dernier tirage">↶ Annuler</button>
-              <button id="resetBtn" title="Recommencer avec les 27 étudiants">↻ Nouveau cycle</button>
+              <button type="button" id="undoBtn" title="Annuler le dernier tirage">↶ Annuler</button>
+              <button type="button" id="resetBtn" title="Recommencer avec les 27 étudiants">↻ Nouveau cycle</button>
             </div>
           </div>
           <div class="progress" aria-label="Progression du cycle"><span id="progressBar"></span></div>
@@ -254,7 +254,7 @@
           <h2 id="configTitle">Configurer votre tirage</h2>
           <p>Personnalisez la filière, le nombre d'étudiants et leurs noms.</p>
         </div>
-        <button class="icon-btn" id="closeConfigBtn" title="Fermer">✕</button>
+        <button type="button" class="icon-btn" id="closeConfigBtn" title="Fermer">✕</button>
       </div>
       <div class="config-grid">
         <label class="field">
@@ -272,8 +272,9 @@
           <span id="namesHint">Un nom par ligne. Laissez vide pour utiliser N1, N2…</span>
         </div>
         <div class="name-tools">
-          <button class="ghost-btn small" id="fillNamesBtn">Générer N1…</button>
+          <button class="ghost-btn small" id="fillNamesBtn" type="button">Générer N1…</button>
           <label class="ghost-btn small file-label">Importer CSV/JSON<input type="file" id="importFile" accept=".csv,.txt,.json" hidden></label>
+          <button class="ghost-btn small" id="exportBtn" type="button">Exporter JSON</button>
         </div>
       </div>
       <textarea id="namesInput" spellcheck="false" placeholder="Ex.
@@ -284,8 +285,8 @@ Youssef El Amrani
       <div class="config-foot">
         <div class="config-note">💡 Les données restent enregistrées dans ce navigateur. Une nouvelle configuration démarre un nouveau cycle.</div>
         <div class="modal-actions">
-          <button class="ghost-btn" id="cancelConfigBtn">Annuler</button>
-          <button class="draw-btn modal-save" id="saveConfigBtn">✓ Enregistrer la classe</button>
+          <button type="button" class="ghost-btn" id="cancelConfigBtn">Annuler</button>
+          <button type="button" class="draw-btn modal-save" id="saveConfigBtn">✓ Enregistrer la classe</button>
         </div>
       </div>
     </div>

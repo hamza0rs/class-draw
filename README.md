@@ -1,4 +1,4 @@
-# 🎲 Class Draw — Tirage au sort pour le passage au tableau
+# ✅ Class Draw — Tirage au sort pour le passage au tableau
 
 Une petite application web moderne permettant à un professeur de tirer au sort, de façon aléatoire et **sans répétition**, l'étudiant qui passe au tableau.
 
